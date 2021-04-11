@@ -20,6 +20,6 @@ class pdf():
         identifer = "".join([R.choice("0123456789abcedf") for i in range(40)])
         newpath = self.opath+identifer+".pdf"
         open(newpath, "wb+").write(bytelar)
-        return newpath
+        return identifer+".pdf"
 
 
