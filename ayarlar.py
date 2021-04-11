@@ -1,7 +1,7 @@
 deviceid = "192.168.1.145:5555"
 adbikili = "/usr/bin/adb"
 crashids = [b"SIGSEGV" , b"SIGFPE" , b"SIGILL" , b"sigsegv" , b"sigfpe" , b"sigill"]
-bekle = 1
+bekle = 0.3
 debug = False
 pdf_okuyucular = ["com.google.android.apps.pdfviewer"]
 pdf_o_args = {

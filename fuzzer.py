@@ -40,7 +40,7 @@ def run(command):
 path = os.getcwd()
 icase = path+"/pdf_files/" # input cases
 ocase = path+"/pdf_outputs/" # output cases
-pdf = cs.pdf(250,icase,ocase)
+pdf = cs.pdf(150,icase,ocase)
 
 testnumber = 0
 

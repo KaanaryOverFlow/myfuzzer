@@ -5,6 +5,7 @@ This project fuzz only google pdf reader
  # requirements
  - python3
  - android emulator or read devices
+ - pdf reader eg. [google](https://play.google.com/store/apps/details?id=com.google.android.apps.pdfviewer&hl=en_US&gl=RU)
  - adb tool
 
 # usage
