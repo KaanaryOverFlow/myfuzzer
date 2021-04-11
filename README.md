@@ -9,6 +9,7 @@ This project fuzz only google pdf reader
 
 # usage
 - connect to android with adb tool
+- set device id to [ayarlar.py](https://github.com/MucahitSaratar/myfuzzer/blob/main/ayarlar.py)
 - $ ```python3 fuzzer.py```
 
  don't hesitate to send pull request
