@@ -1,6 +1,6 @@
-deviceid = "192.168.1.145:5555"
+deviceid = "192.168.56.102:5555"
 adbikili = "/usr/bin/adb"
-crashids = [b"SIGSEGV" , b"SIGFPE" , b"SIGILL" , b"sigsegv" , b"sigfpe" , b"sigill"]
+crashids = [b"SIGSEGV" , b"SIGFPE" , b"SIGILL" , b"sigsegv" , b"sigfpe" , b"sigill", b"crash", b"CRASH"]
 bekle = 0.3
 debug = False
 pdf_okuyucular = ["com.google.android.apps.pdfviewer"]
