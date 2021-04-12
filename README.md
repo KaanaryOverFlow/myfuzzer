@@ -10,9 +10,9 @@
 # requirements
  - python3
  - android emulator or read devices
+ - adb tool
  - pdf reader eg. [google](https://play.google.com/store/apps/details?id=com.google.android.apps.pdfviewer&hl=en_US&gl=RU)
  - [signal application](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms&hl=en&gl=US)
- - adb tool
 
 # usage
 - connect to android with adb tool
