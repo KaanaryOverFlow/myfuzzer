@@ -3,13 +3,13 @@ import os
 import random as R
 import math
 
-class pdf():
+class creator():
     def __init__(self,number,ipath,opath):
         self.number = number
         self.ipath = ipath
         self.opath = opath
 
-    def get(self):
+    def get(self, ext):
         ifile = self.ipath + R.choice(os.listdir(self.ipath))
         bytelar = bytearray(open(ifile, "rb").read())
         numara = R.randrange(math.ceil((float(len(bytelar)) / self.number))) + 1
@@ -18,8 +18,8 @@ class pdf():
             index = R.randrange(len(bytelar))
             bytelar[index] = rbyte
         identifer = "".join([R.choice("0123456789abcedf") for i in range(40)])
-        newpath = self.opath+identifer+".pdf"
+        newpath = self.opath+identifer+f".{ext}"
         open(newpath, "wb+").write(bytelar)
-        return identifer+".pdf"
+        return identifer+f".{ext}"
 
 
