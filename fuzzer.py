@@ -56,10 +56,14 @@ def fuzzgifforsignal(gen):
     identifer = gen.get("gif")
     print(f"Test sayisi: {testnumber}\t\t\t\t\tFile: {identifer}")
     subprocess.call([adb, "-s", devid, "push", f"gif_o/{identifer}", "/storage/emulated/0/Pictures/"])
+    time.sleep(0.1)
     subprocess.call([adb, "-s", devid, "shell", "input", "tap", "980","1730"]) # press +
+    time.sleep(0.1)
     subprocess.call([adb, "-s", devid, "shell", "input", "tap", "580","1675"]) # select file
+    time.sleep(0.1)
     clear()
     subprocess.call([adb, "-s", devid, "shell", "input", "tap", "380","530"]) # press file
+    time.sleep(0.1)
     subprocess.call([adb, "-s", devid, "shell", "input", "tap", "980","1730"]) # press send
     time.sleep(ayarlar.bekle)
     logargs = [adb, "-s", devid, 'logcat', '-d']
@@ -76,7 +80,7 @@ def fuzzgifforsignal(gen):
 
 def signalgiffuzz():
     initalizegifsignal()
-    gifgen = cs.creator(300,path+"/gif_i/",path+"/gif_o/")
+    gifgen = cs.creator(800,path+"/gif_i/",path+"/gif_o/")
     while True:
         try:
             fuzzgifforsignal(gifgen)
