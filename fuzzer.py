@@ -115,7 +115,7 @@ def fuzzp(pdf, application):
 def pdffuzz():
     icase = path+"/pdf_files/" # input cases
     ocase = path+"/pdf_outputs/" # output cases
-    pdf = cs.creator(400,icase,ocase)
+    pdf = cs.creator(900,icase,ocase)
     initalizepdfgoogle(ayarlar.pdf_okuyucular)
     while True:
         try:
